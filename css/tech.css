@@ -1,0 +1,10 @@
+@import 'colors.css';
+
+.content-image{
+  width: 400px;
+  margin-left: 20px;
+}
+video{
+  height: 450px;
+  border-radius: 20px;
+}

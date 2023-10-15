@@ -1,0 +1,36 @@
+@import 'colors.css';
+
+
+
+h2{
+  margin-bottom: 5px;
+}
+table{
+  border: solid 2px white;
+  border-collapse: collapse;
+  width: 900px;
+  table-layout: fixed;
+}
+
+th{
+  border: solid 1px white;
+  background-color: rgb(111, 111, 111);
+  color: white;
+}
+td{
+  border: solid 2px white;
+  color: var(--important-color);
+}
+.rowEven{
+    background-color: rgb(75, 75, 75);
+}
+.rowOdd{
+  background-color: rgb(48, 48, 48);
+}
+.empty{
+  border-top: none;
+  border-bottom: none;
+}
+.secondTable td{
+  border: none;
+}

@@ -1,0 +1,222 @@
+@import 'colors.css';
+
+body, html{
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+body{
+  background-image: url("../images/background2.jpg");
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Space Grotesk', sans-serif;
+}
+.background{
+  width: 10vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+nav{
+  display: flex;
+  justify-content: right;
+  border-bottom: var(--line-color) 1px solid;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+nav ul{
+  display: flex;
+  text-align: right;
+  width: 50vw;
+  margin: 0;
+}
+nav li{
+  list-style: none;
+  margin-left: 20px;
+}
+nav a{
+  text-decoration: none; 
+  font-size: 20px;
+  border-radius: 3px;
+  color: var(--text-color);
+  padding: 20px 20px 20px 20px;
+}
+nav a:not(.current):hover{
+  color: var(--current-nav-color);
+}
+.current{
+  color: var(--current-nav-text-color);
+  background-color: var(--current-nav-color);  
+  position: relative;
+  top: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+main{
+  color: var(--text-color);
+  margin-top: 5px;
+}
+
+.sections{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  display: flex;
+}
+.sections ul{
+  margin-bottom: 5px;
+}
+.sections li{
+  flex: 1;
+  display: inline-block;
+  margin-left: 50px;
+  margin-bottom: 5px;
+  text-decoration: none;
+  list-style-type: none;
+  border: solid var(--line-color) 1px; 
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 3px;
+}
+.sections a{
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 3px;
+  color: var(--text-color);
+}
+.sections li:hover{
+  position: relative;
+  bottom: 1px;
+}
+.sections li a:active{
+  color: var(--current-nav-color);
+}
+
+.clear-float{
+  clear: both;
+}
+.scroll-container{
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  overflow-y: hidden;
+}
+.scroll-item{
+  flex: 0 0 auto;  
+  width: 100vw;
+  height: 84vh ;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+}
+#start{
+  display: flex;
+  align-items: center;
+}
+.center{
+  flex: 1;
+  text-align: center;
+}
+#home #what-else .scroll-content{
+  display: flex;
+  align-items: center;
+}
+.hobby-logo{
+  width: 200px;
+  flex: 1;
+}
+.hobby-logo img{
+    width: 200px;
+}
+
+.intro-image{
+  margin-top: 40px;
+  width: 350px;
+}
+.important{
+  color: var(--important-color);
+  font-weight: bold;
+}
+
+h2{
+  color: var(--header-color);
+  font-size:20px;
+  margin-left:10px;
+  margin-top: 10px;
+}
+footer p{
+  position: fixed;
+  bottom: 3px;
+  right: 5px;
+  background-color: var(--footer-background-color);
+  color: var(--footer-color);
+  z-index: 1;
+}
+
+.imageBlock{
+  margin-right: 20px;
+  margin-left: 20px;
+  flex: 1;
+  height: min-content;
+}
+
+.imageBlock img{
+  width: 100%;
+}
+.left-margin{
+  height: 100%;
+  width: 100px;
+  align-items: center;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+.left{
+  height: 80px;
+  position: relative;
+}
+.left:hover{
+  position: relative;
+  right: 5px;
+  margin: 30px;
+}
+.right-margin{
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+.right{
+  height: 80px;
+  margin: 30px;
+}
+.right:hover{
+  position: relative;
+  left: 5px;
+}
+.scroll-content{
+  flex: 5;
+}
+.image-container{
+  display: flex;
+}
+.image-container-grid{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.left-margin:active{
+  position:relative;
+  right: 10px;
+}
+.right-margin:active{
+  position:relative;
+  left: 10px;
+}
